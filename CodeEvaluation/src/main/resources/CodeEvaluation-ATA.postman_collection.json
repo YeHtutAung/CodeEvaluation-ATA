@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "d0cb72a9-7326-4efe-8b90-0f30ebede040",
+		"name": "CodeEvaluation-ATA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Benefit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/SalaryDS/jobdata?fields=id,employer,job_title&sort=id&sort_type=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"SalaryDS",
+						"jobdata"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "id,employer,job_title"
+						},
+						{
+							"key": "sort",
+							"value": "id"
+						},
+						{
+							"key": "sort_type",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Jobdata-filter-sort",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/SalaryDS/jobdata?fields=id,employer,job_title&sort=id&sort_type=DESC",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"SalaryDS",
+						"jobdata"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "id,employer,job_title"
+						},
+						{
+							"key": "sort",
+							"value": "id"
+						},
+						{
+							"key": "sort_type",
+							"value": "DESC"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
