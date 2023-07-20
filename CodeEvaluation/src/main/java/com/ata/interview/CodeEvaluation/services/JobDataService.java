@@ -34,15 +34,4 @@ public class JobDataService {
 			return new ArrayList<JobData>();
 		}
 	}
-
-	public List<JobData> getBySalaryGreaterThanEqual(Double minSalary) {
-		List<JobData> jobDatas = jobDataRespository.findBySalaryGreaterThanEqual(minSalary);
-
-		if (jobDatas.size() > 0) {
-			return jobDatas;
-		} else {
-			return new ArrayList<JobData>();
-		}
-	}
-
 }
